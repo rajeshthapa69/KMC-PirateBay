@@ -1,0 +1,415 @@
+<DOCTYPE html>
+<html lang="en-NP">
+  <head>
+    <link rel="icon" href="">
+    <title>PirateBayHome</title>
+    <meta name="description" content="Blogging">
+    <meta name="keywords" content="Blog, Tutorial, tech updates, trending events, earning tips">
+    <meta name="author" content="Rajesh Thapa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/Poppins" rel="stylesheet">
+    <style>
+      *{
+        
+      }
+      body{
+        background-color: #13181c;
+      }
+      .box{
+      }
+      .logo{
+        font-family: 'Cubano', sans-serif;
+      }
+      .f-logo{
+        font-family: 'Cubano', sans-serif;
+        font-weight: 16px;
+      }
+      .intro-top{
+        background-color: #13181c;
+        border-color: #13181c;
+        color: white;
+      }
+      .intro-top-1a{
+        font-family: 'Cubano', sans-serif;
+        font-size: 45px;
+      }
+      .intro-top-1b{
+        font-family: 'Cubano', sans-serif;
+        font-size: 16px;
+      }
+      .intro-top-1c{
+        font-family: 'Cubano', sans-serif;
+        font-size: 45px;
+        color: #a755f7;
+      }
+      .line{
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        border-radius: 10px;
+        padding: 2px;
+        animation: gradient-slide 500ms infinite;
+      }
+      /*Gradient color slide animation*/
+      @keyframes gradient-slide{
+        0%{
+          background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+        15%{
+          background-image: linear-gradient(to right, violet,red,orange,yellow,green,blue,indigo);
+        }
+        30%{
+          background-image: linear-gradient(to right, indigo,violet,red,orange,yellow,green,blue);
+        }
+        45%{
+          background-image: linear-gradient(to right, blue,indigo,violet,red,orange,yellow,green);
+        }
+        60%{
+          background-image: linear-gradient(to right, green,blue,indigo,violet,red,orange,yellow);
+        }
+        75%{
+          background-image: linear-gradient(to right, yellow,green,blue,indigo,violet,red,orange);
+        }
+        90%{
+          background-image: linear-gradient(to right, orange,yellow,green,blue,indigo,violet,red);
+        }
+        100%{
+          background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+      }
+      .Home-blog1-title{
+        font-family: 'Cubano', Sans-Serif;
+      }
+      .Home-blog2-title{
+        font-family: 'Cubano', Sans-Serif;
+      }
+      .Home-blog3-title{
+        font-family: 'Cubano', Sans-Serif;
+      }
+      a{
+        text-decoration: none;
+      }
+      .card{
+        color: white;
+      }
+      .card-footer{
+        color: white;
+        opacity: 0.7;
+      }
+      .card-hover a:hover{
+        
+      }
+      .footer{
+        
+      }
+      .fh a{
+        color: #0087ff;
+      }
+      .wh a{
+        color: #00e135;
+      }
+      p.intro-top-1b span.word-fade{
+        animation: fade 2s infinite;
+      }
+      /*Coloured word fade in-out animation*/
+      @keyframes fade{
+        0%{
+          opacity: 1;
+        }
+        50%{
+          opacity: 0.4;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="logo navbar-brand" href="">PIRATE <span style="color:red">BAY</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll"style="font-family: 'Poppins', Sans-Serif;">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PirateBayHome.html"><i class="fa-solid fa-user"></i> About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-address-card"></i> Contact us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="mailto:www.iamrajeshthapa69@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Gmail</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100083013861017" target="_blank"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://wa.me/9749757403" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> Whatsapp</a></li>
+            </ul>
+          </li>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+      </div>
+    </div>
+  </nav>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong><i class="fa-solid fa-triangle-exclamation"></i> Report us if you have any kind of issue with the links !</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="intro-top w-60 my-3 mx-5 mb-5 text-center">
+   <div class="body">
+     <p class="intro-top-1a">WELCOME TO OUR <span style="color:#F57F13">WEBSITE</span></p>
+     <p class="intro-top-1b">Hello, we are the student of <span class="word-fade" style="color: #a755f7;">KMC Bagbazar</span>.We are passionated about <span class="word-fade" style="color:#23c55e;">learning</span>  and sharing <span class="word-fade" style="color:#ee4444;">knowledge</span>,and we created this website to provide quality <span class="word-fade" style="color:#ee4695;">educational</span> content that might be useful for <span class="word-fade" style="color:#e9b308;">examination </span>  or for sharpening one's knowledge.We usually upload Notes for <span class="word-fade" style="color: red;">+2 level</span> and question papers for Examinations.</p>
+     <p class="intro-top-1c my-2">NOTES</p>
+     <div class="line"></div>
+   </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-5 mx-2" style="font-family: 'Poppins', Sans-Serif;">
+    <div class="col">
+
+<!-- For class 11 -->
+
+      <div class="card h-100 bg-dark" style="width: 18rem;">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+          class 11
+          <span class="visually-hidden">unread messages</span>
+        </span>
+        <div class="card-body">
+          <h5 class="intro-top-1a" style="color: white;font-size: 30px;">PHYSICS</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <a href="" target="_blank">
+            <div class="alert alert-success" role="alert" style="font-weight: bold;">
+              Notes [PDF]
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="alert alert-success" role="alert" style="font-weight: bold;">
+              Question papers [All term included]
+            </div>
+          </a>
+        </div>
+        <div class="card-footer text-light">
+          <i class="fa-solid fa-clock"></i> 12/5/2022
+        </div>
+      </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 bg-dark" style="width: 18rem;">
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+        class 11
+        <span class="visually-hidden">unread messages</span>
+      </span>
+      <div class="card-body">
+        <h5 class="intro-top-1a" style="color: white;font-size: 30px;">CHEMISTRY</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+        <a href="" target="_blank">
+          <div class="alert alert-success" role="alert" style="font-weight: bold;">
+            Notes [PDF]
+          </div>
+        </a>
+        </a>
+        <a href="" target="_blank">
+          <div class="alert alert-success" role="alert" style="font-weight: bold;">
+            Question papers [All term included]
+          </div>
+        </a>
+      </div>
+      <div class="card-footer text-light">
+        <i class="fa-solid fa-clock"></i> 12/5/2022
+      </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="card h-100 bg-dark" style="width: 18rem;">
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+      class 11
+      <span class="visually-hidden">unread messages</span>
+    </span>
+    <div class="card-body">
+      <h5 class="intro-top-1a" style="color: white;font-size: 30px;">MATHMATICS</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Notes [PDF]
+        </div>
+      </a>
+      </a>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Question papers [All term included]
+        </div>
+      </a>
+    </div>
+    <div class="card-footer text-light">
+      <i class="fa-solid fa-clock"></i> 12/5/2022
+    </div>
+  </div>
+</div>
+
+    <div class="col">
+      <div class="card h-100 bg-dark" style="width: 18rem;">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+          class 11
+          <span class="visually-hidden">unread messages</span>
+        </span>
+        <div class="card-body">
+          <h5 class="intro-top-1a" style="color: white;font-size: 30px;">COMPUTER</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <a href="https://drive.google.com/drive/folders/1bsA0Eg4exICOKK36cdTnrYJO-S7gK4PH?usp=drive_link" target="_blank">
+            <div class="alert alert-success" role="alert" style="font-weight: bold;">
+              Notes and programming with solutions
+            </div>
+          </a>
+          <a href="https://drive.google.com/drive/folders/10eqNhE0HAXfG78fUX8vF6J--yhgKXwVV?usp=drive_link" target="_blank">
+            <div class="alert alert-success" role="alert" style="font-weight: bold;">
+              Question paper [All term included]
+            </div>
+          </a>
+        </div>
+        <div class="card-footer text-light">
+          <i class="fa-solid fa-clock"></i> 12/5/2022
+        </div>
+      </div>
+  </div>
+
+<!-- For class 12 -->
+
+  <div class="col">
+    <div class="card h-100 bg-dark" style="width: 18rem;">
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        class 12
+        <span class="visually-hidden">unread messages</span>
+      </span>
+      <div class="card-body">
+        <h5 class="intro-top-1a" style="color: white;font-size: 30px;">PHYSICS</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+        <a href="" target="_blank">
+          <div class="alert alert-success" role="alert" style="font-weight: bold;">
+            Notes [PDF]
+          </div>
+        </a>
+        <a href="" target="_blank">
+          <div class="alert alert-success" role="alert" style="font-weight: bold;">
+            Question papers [All term included]
+          </div>
+        </a>
+      </div>
+      <div class="card-footer text-light">
+        <i class="fa-solid fa-clock"></i> 12/5/2022
+      </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="card h-100 bg-dark" style="width: 18rem;">
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      class 12
+      <span class="visually-hidden">unread messages</span>
+    </span>
+    <div class="card-body">
+      <h5 class="intro-top-1a" style="color: white;font-size: 30px;">CHEMISTRY</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Notes [PDF]
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Question papers [All term included]
+        </div>
+      </a>
+    </div>
+    <div class="card-footer text-light">
+      <i class="fa-solid fa-clock"></i> 12/5/2022
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card h-100 bg-dark" style="width: 18rem;">
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      class 12
+      <span class="visually-hidden">unread messages</span>
+    </span>
+    <div class="card-body">
+      <h5 class="intro-top-1a" style="color: white;font-size: 30px;">MATHMATICS</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Notes [PDF]
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Question papers [All term included]
+        </div>
+      </a>
+    </div>
+    <div class="card-footer text-light">
+      <i class="fa-solid fa-clock"></i> 12/5/2022
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card h-100 bg-dark" style="width: 18rem;">
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      class 12
+      <span class="visually-hidden">unread messages</span>
+    </span>
+    <div class="card-body">
+      <h5 class="intro-top-1a" style="color: white;font-size: 30px;">COMPUTER</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Notes and programming with solutions
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="alert alert-success" role="alert" style="font-weight: bold;">
+          Question papers [All term included]
+        </div>
+      </a>
+    </div>
+    <div class="card-footer text-light">
+      <i class="fa-solid fa-clock"></i> 12/5/2022
+    </div>
+  </div>
+</div>
+</div>
+<div class="line my-5 mx-5"></div>
+
+ <div class="bg-dark p-3 footer">
+    <p class="text-light text-center f-logo">PIRATE <span style="color:red">BAY</span></p>
+    <p class="text-center" style="font-family:'Poppins', Sans-Serif;color:white;opacity:0.7;"><i class="fa-regular fa-copyright"></i> Copyright All right reserved 2023.</p>
+    <p class="text-center" style="font-family:'Poppins', Sans-Serif;color:white;opacity:0.7;">Created with the partnership with <a href="https://www.facebook.com/rajan.nyaupane.16" target="_blank">Rajan Nyaupane</a> [<i class="fa-solid fa-handshake"></i>]</p>
+    <div>
+      <div class="row text-center">
+        <div class="col-6 fh p-3"><a href="https://www.facebook.com/profile.php?id=100083013861017" target="_blank"><i
+              class="fa-brands fa-facebook fa-xl"></i></a></div>
+        <div class="col-6 wh p-3"><a href="https://wa.me/9749757403" target="_blank"><i
+              class="fa-brands fa-whatsapp fa-xl fa-xl"></i></a></div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
