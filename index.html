@@ -30,7 +30,7 @@
       * {}
 
       body {
-        background-color: #13181c;
+        background-color: black;
       }
 
       .box {}
@@ -45,8 +45,8 @@
       }
 
       .intro-top {
-        background-color: #13181c;
-        border-color: #13181c;
+        background-color: black;
+        border-color: black;
         color: white;
       }
 
@@ -170,12 +170,16 @@
 
       .card-footer {
         color: white;
-        opacity: 0.7;
+        display: none;
       }
 
       .card-hover a:hover {}
 
-      .footer {}
+      .footer {
+        border-top-right-radius: 5rem;
+        border-top-left-radius: 5rem;
+        border-top: 5px solid white;
+      }
 
       .fh a {
         color: #0087ff;
@@ -203,6 +207,10 @@
           opacity: 1;
         }
       }
+      .card-body img{
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+      }
     </style>
   </head>
 
@@ -211,7 +219,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark sticky-top" style="background-color: black;">
         <div class="container-fluid">
           <a class="logo navbar-brand" href="index.html">KMC <span style="color:red">PIRATE BAY</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -231,12 +239,12 @@
                   data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-address-card"></i> Contact us
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="mailto:www.iamrajeshthapa69@gmail.com" target="_blank"><i
+                  <li><a class="dropdown-item" href="kmcpiratebay@gmail.com" target="_blank"><i
                         class="fa-solid fa-envelope"></i> Gmail</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100083013861017"
+                  <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=61551560434542"
                       target="_blank"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
                   </li>
                   <li>
@@ -254,22 +262,15 @@
           </div>
         </div>
       </nav>
-      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong><i class="fa-solid fa-triangle-exclamation"></i> Report us if you have any kind of issue with the links
-          !</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
       <div class="intro-top w-60 my-3 mx-5 mb-5 text-center">
         <div class="body">
           <p class="intro-top-1a">WELCOME TO OUR <span
               style="background-image: linear-gradient(to top,var(--tw-gradient-stops));--tw-gradient-from: #f97316;--tw-gradient-to: rgb(249 115 22 / 0);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);--tw-gradient-to: #eab308;background-clip: text;color: #0000;-webkit-background-clip: text;">WEBSITE</span>
           </p>
-          <p class="intro-top-1b">Hello, we are the student of <span class="word-fade" style="color: #a755f7;">KMC
-              Bagbazar</span>.We are passionated about <span class="word-fade" style="color:#23c55e;">learning</span>
-            and sharing <span class="word-fade" style="color:#ee4444;">knowledge</span>,and we created this website to
+          <p class="intro-top-1b">We created this <span class="word-fade" style="color:#23c55e;">website</span> to
             provide quality <span class="word-fade" style="color:#ee4695;">educational</span> content that might be
-            useful for your <span class="word-fade" style="color:#e9b308;">examination</span>.We usually upload Notes for <span class="word-fade" style="color: red;">+2 level</span> and
-            past question papers.</p>
+            <span class="word-fade" style="color:#ee4444;">useful</span> for your <span class="word-fade" style="color:#e9b308;">examination</span>.We usually upload Notes for <span class="word-fade" style="color: red;">+2 level</span> and
+            past <span class="word-fade" style="color: #a755f7;">question papers.</span></p>
           <p class="intro-top-1c my-2">NOTES</p>
           <div class="line"></div>
         </div>
@@ -279,7 +280,7 @@
 
           <!-- For class 11 -->
 
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
               class 11
               <span class="visually-hidden">unread messages</span>
@@ -287,15 +288,14 @@
             <div class="card-body">
               <img src="PhyCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">PHYSICS</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1-L5RAksB6_SeMyg-f414lMr7x3oTWWja?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1TyXtBmbHINK5qJGgcaKfqCxzrZCWMw72?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -306,7 +306,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
               class 11
               <span class="visually-hidden">unread messages</span>
@@ -314,16 +314,15 @@
             <div class="card-body">
               <img src="ChemCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">CHEMISTRY</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1eFelvlzfiDM6yqaFQG_Wlvtil0E82KaX?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               </a>
               <a href="https://drive.google.com/drive/folders/1xeGB3q0DHhzhLAMv3XC7LZ0bqJy2MzPv?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -334,7 +333,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
               class 11
               <span class="visually-hidden">unread messages</span>
@@ -342,16 +341,15 @@
             <div class="card-body">
               <img src="MathCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">MATHMATICS</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1XTAmvkEVo7XyyC0m02QER9WX1p373frF?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               </a>
               <a href="https://drive.google.com/drive/folders/1NclpciKfOOSGp18M0zaQxkm3gjxIVZwq?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -362,7 +360,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
               class 11
               <span class="visually-hidden">unread messages</span>
@@ -370,17 +368,16 @@
             <div class="card-body">
               <img src="CompCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">COMPUTER</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1bsA0Eg4exICOKK36cdTnrYJO-S7gK4PH?usp=drive_link"
                 target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes and programming with solutions
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/10eqNhE0HAXfG78fUX8vF6J--yhgKXwVV?usp=drive_link"
                 target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question paper [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question paper [All terms included]
                 </div>
               </a>
             </div>
@@ -391,7 +388,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
               class 11
               <span class="visually-hidden">unread messages</span>
@@ -399,17 +396,16 @@
             <div class="card-body">
               <img src="BioCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">BIOLOGY</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1w-B_wj5z_J8X6dofB4lElJoqPpcf4X5Q?usp=drive_link"
                 target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1g-USpbOeH1Ambxyp5uDiVuAwD56RzZC_?usp=drive_link"
                 target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question paper [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question paper [All terms included]
                 </div>
               </a>
             </div>
@@ -422,7 +418,7 @@
         <!-- For class 12 -->
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               class 12
               <span class="visually-hidden">unread messages</span>
@@ -430,15 +426,14 @@
             <div class="card-body">
               <img src="PhyCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">PHYSICS</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1qSUKr79UbcvM0Xlc2U7hSy7m39wI1TEM?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1GyKubPQKNiK25sX5nkT6Ae9eOqtROmg7?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -449,7 +444,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               class 12
               <span class="visually-hidden">unread messages</span>
@@ -457,15 +452,14 @@
             <div class="card-body">
               <img src="ChemCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">CHEMISTRY</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/171WYM-TqtbQcjl1nNv4qNBdI26EBPu9q?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1cJUvKqnoojzXx2zn216LlwEz4ZQyDB9R?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -476,7 +470,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               class 12
               <span class="visually-hidden">unread messages</span>
@@ -484,15 +478,14 @@
             <div class="card-body">
               <img src="MathCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">MATHMATICS</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1GFuI5CGErHDKp3icLC0YijLImbLdULoh?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1m1ZWRdIIYZfA-XRfrLvjcdw9jkrHrzlo?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -503,7 +496,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               class 12
               <span class="visually-hidden">unread messages</span>
@@ -511,15 +504,14 @@
             <div class="card-body">
               <img src="CompCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">COMPUTER</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1ozbRMRqg2tqpWsy3rgnzkRk5xxyb4b8C?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes and programming with solutions
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1Rk9pkWq5z3eZgSDk_jgqP_nFcov46pZx?usp=drive_link" target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question papers [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question papers [All terms included]
                 </div>
               </a>
             </div>
@@ -530,25 +522,24 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-dark" style="width: 18rem;">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+          <div class="card h-100" style="width: 18rem;background-color: black;">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               class 12
               <span class="visually-hidden">unread messages</span>
             </span>
             <div class="card-body">
               <img src="BioCardImage.jpg" class="card-img-top my-1" style="height: 145px;" alt="Image not found :'(">
               <h5 class="intro-top-1ax" style="font-size: 30px;">BIOLOGY</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
               <a href="https://drive.google.com/drive/folders/1GYS8Rc0VzxHOwueOjWMZ98ory01jBY2V?usp=drive_link"
                 target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
                   Notes [PDF]
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1himYLVNXlF6AWjMfK34e2NNqOBKXK0t3?usp=drive_link"
                 target="_blank">
-                <div class="alert alert-success" role="alert" style="font-weight: bold;">
-                  Question paper [All term included]
+                <div class="alert alert-success" role="alert" style="font-weight: bold;color: black;">
+                  Question paper [All terms included]
                 </div>
               </a>
             </div>
@@ -561,7 +552,7 @@
       
       <div class="line my-5 mx-5"></div>
 
-      <div class="card mb-5 bg-dark my-5 mx-4">
+      <div class="card mb-5 my-5 mx-4" style="background-color: black;">
         <h5 class="card-header donation">DONATION</h5>
         <div class="card-body">
           <img src="esewa_logo.png" height="" width="100px" class="my-2" alt="e-sewa">
@@ -577,16 +568,16 @@
 
       <div class="line my-5 mx-5"></div>
 
-      <div class="bg-dark p-3 footer">
+      <div class=" p-3 footer" style="background-color: black;">
         <p class="text-light text-center f-logo" style="cursor: pointer;">KMC <span style="color:red;">PIRATE BAY</span></p>
-        <p class="text-center" style="font-family:'Poppins', Sans-Serif;color:white;opacity:0.7;"><i
+        <p class="text-center" style="font-family:'Poppins', Sans-Serif;color:white;opacity:0.9;"><i
             class="fa-regular fa-copyright"></i> Copyright All right reserved 2023.</p>
-        <p class="text-center" style="font-family:'Poppins', Sans-Serif;color:white;opacity:0.7;">Created by the
+        <p class="text-center" style="font-family:'Poppins', Sans-Serif;color:white;opacity:0.9;">Created by the
           partnership with <a href="https://www.facebook.com/rajan.nyaupane.16" target="_blank">Rajan Nyaupane</a> [<i
             class="fa-solid fa-handshake"></i>]</p>
         <div>
           <div class="row text-center">
-            <div class="col-6 fh p-3"><a href="https://www.facebook.com/profile.php?id=100083013861017"
+            <div class="col-6 fh p-3"><a href="https://www.facebook.com/profile.php?id=61551560434542"
                 target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></div>
             <div class="col-6 wh p-3"><a href="https://wa.me/9749757403" target="_blank"><i
                   class="fa-brands fa-whatsapp fa-xl fa-xl"></i></a></div>
