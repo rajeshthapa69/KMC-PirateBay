@@ -323,5 +323,14 @@
           </div>
         </div>
       </div>
+          <img src="" id= "img">
+          <input type="file" id="file"/>
+          <script>
+            let az = document.getElementById("img");
+            let bz = document.getElementById("file");
+            bz.onchange=function(){
+              az.src= URL.createObjectURL(bz.files[0]);
+            }
+          </script>
   </body>
   </html>
