@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+            color: white;
+            font-family: Poppins, sans-serif;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .container {
+            height: 500px;
+            width: 300px;
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px white;
+        }
+
+        .father {
+            margin-top: 5px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+
+        .profile {
+            display: flex;
+            border-bottom: 1px solid white;
+            margin-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .pp {
+            height: 55px;
+            width: 55px;
+            border: 2px solid #7516d3;
+
+            border-radius: 50%;
+        }
+
+        .nameWstatus {
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .logout {
+            margin-left: 27px;
+            margin-top: 15px;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .status {
+            font-size: 15px;
+        }
+
+        .logout button {
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        .logout button a {
+            color: black;
+            text-decoration: none;
+            font-family: Poppins, sans-serif;
+            font-weight: bold;
+        }
+
+        .search {
+            display: flex;
+        }
+
+        .searchusr {
+            margin-top: 15px;
+            margin-left: px;
+        }
+
+        input {
+            height: 25px;
+            padding-left: 25px;
+            padding-right: 35px;
+            border: none;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .searchbtn {
+            margin-top: 15px;
+        }
+
+        .searchbtn button:hover {
+            cursor: pointer;
+        }
+
+        .searchbtn button {
+            padding: 5.6px;
+            border: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-left: 2px;
+        }
+
+        .msgclt {
+            margin-top: 15px;
+
+            height: 325px;
+            border: 2px solid gray;
+            word-wrap: break-word;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-width: none;
+        }
+
+        ::-webkit-scrollbar {
+            background: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: ;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: -30px;
+        }
+
+        .msgpfl {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 15px;
+            border-bottom: 1px solid gray;
+        }
+
+        .msgpflImg {
+            height: 45px;
+            width: 45px;
+            border: 2px solid orangered
+            ;
+            border-radius: 50%;
+        }
+
+        li {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .data {
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+
+        .msgpflname {
+            font-size: 15px;
+        }
+
+        .previewmsg {
+            font-size: 10px;
+            opacity: 0.9;
+        }
+        .msgpflstatus{
+            color: gray;
+            font-size: 8px;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+        input::placeholder{
+            font-family: Poppins,sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="father">
+            <div class="profile">
+                <div class="pp"><img src="PhyCardImage.jpg" alt=""></div>
+                <div class="nameWstatus">
+                    <div class="name">Rajesh Thapa</div>
+                    <div class="status">Active Now <i class="fa-solid fa-circle"
+                            style="color: greenyellow;font-size: 10px;"></i></div>
+                </div>
+                <div class="logout"><button><a href="login.html">Logout</a></button></div>
+            </div>
+            <div class="search">
+                <div class="searchusr"><input type="text" name="" id="" placeholder="Search Your Friend Here"></div>
+                <div class="searchbtn"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
+            <div class="msgclt">
+                <ul>
+                    <li>
+                        <div class="msgpfl">
+                            <div class="msgpflImg" style="border: 2px solid #7516d3;"><img src="rajesh.jpg" alt=""></div>
+                            <div class="data">
+                                <div class="msgpflname"><i class="fa-solid fa-crown" style="color: goldenrod;"></i> Rajesh Thapa</div>
+                                <div class="previewmsg">I Created All This ... </div>
+                            </div>
+                            <div class="msgpflstatus"><i class="fa-solid fa-circle" style="color: greenyellow;"></i></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="msgpfl">
+                            <div class="msgpflImg"><img src="osama.jpg" alt=""></div>
+                            <div class="data">
+                                <div class="msgpflname">Osama B. Laden</div>
+                                <div class="previewmsg">Alhah Hu Akbar</div>
+                            </div>
+                            <div class="msgpflstatus"><i class="fa-solid fa-circle"></i></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="msgpfl">
+                            <div class="msgpflImg"><img src="albert.jpeg" alt=""></div>
+                            <div class="data">
+                                <div class="msgpflname">Albert Einstein</div>
+                                <div class="previewmsg">Bro, Teach me Physics</div>
+                            </div>
+                            <div class="msgpflstatus"><i class="fa-solid fa-circle"></i></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="msgpfl">
+                            <div class="msgpflImg"><img src="hitler.jpeg" alt=""></div>
+                            <div class="data">
+                                <div class="msgpflname">Adolf Hitler</div>
+                                <div class="previewmsg">I will distroy your country..</div>
+                            </div>
+                            <div class="msgpflstatus"><i class="fa-solid fa-circle"></i></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="msgpfl">
+                            <div class="msgpflImg"><img src="socrates.webp" alt=""></div>
+                            <div class="data">
+                                <div class="msgpflname">Socrates</div>
+                                <div class="previewmsg">Bro! We all Die Anyway ...</div>
+                            </div>
+                            <div class="msgpflstatus"><i class="fa-solid fa-circle"></i></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="msgpfl">
+                            <div class="msgpflImg"><img src="sins.jpeg" alt=""></div>
+                            <div class="data">
+                                <div class="msgpflname">Jonny Sins</div>
+                                <div class="previewmsg">Hey what's up I wanna F*</div>
+                            </div>
+                            <div class="msgpflstatus"><i class="fa-solid fa-circle"></i></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>

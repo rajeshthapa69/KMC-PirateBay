@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: white;
+            font-family: Poppins, sans-serif;
+        }
+
+        .container {
+            height: 340px;
+            width: 300px;
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px white;
+        }
+
+        .formContent {
+            margin-top: 5px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .formTitle {
+            display: flex;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: 30px;
+            margin-top: 15px;
+            border-bottom: 1px solid white;
+            background-image: linear-gradient(to top, #6015ac, #A855F7);
+            background-clip: text;
+            color: #0000;
+            -webkit-background-clip: text;
+            font-family: Cubano, sans-serif;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        .inputErrorMsg {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            border-radius: 3px;
+            border: 2px solid #f5c6cb;
+            background-color: #f5c6cb;
+            color: #721c24;
+            margin-bottom: 15px;
+            text-align: center;
+            display: none;
+        }
+
+        .fullName {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .dfn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dln {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+        }
+
+        input {
+            border: none;
+            height: 25px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            
+        }
+
+        input::placeholder {
+            font-family: Poppins, sans-serif;
+            padding-left: 5px;
+        }
+        .loginBtn{
+            font-family: Poppins, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type='file']{
+            cursor: pointer;
+        }
+        .accountExist{
+            margin-top: 15px;
+        }
+        .accountExist{
+            font-size: 15px;
+        }
+        .accountExist a{
+            color: greenyellow;
+        }
+        .accountExist a:hover{
+            color: red;
+            text-decoration: none;
+            transition: 0.8s ease-out;
+        }
+        .eye{
+            position: absolute;
+            color: black;
+            top: 54.5%;
+            left: 83%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dform">
+            <form action="bokshiverse.html" method="post">
+                <div class="formContent">
+                    <div class="formTitle">BOKSHI<span>VERSE</span></div>
+                    <div class="inputErrorMsg">Either Email or Password Didn't Matched to the records.Please ! provide valid credentials</div>
+                    <label for="">Email Address</label>
+                    <input type="email" name="" id="" required placeholder="Enter your email">
+                    <label for="">Password</label>
+                    <input type="password" required placeholder="Enter your password" id="pass">
+                    <div class="eye"><i class="fa-solid fa-eye" id="eye" onclick="toggle();"></i></div>
+                    <input type="submit" name="" style="height:30px" class="loginBtn" id="login">
+                    <div class="accountExist">Don't Have Account ? <a href="registor.html">Registor now</a></div>
+                </iv>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    let pass = document.getElementById("pass");
+    let eye = document.getElementById("eye");
+    let email = document.getElementById("email");
+    let login = document.getElementById("login");
+    let error = document.getElementsByClassName("inputErrorMsg");
+    
+    function toggle(){
+        if(pass.type ==="password"){
+            pass.setAttribute("type","text");
+            eye.classList.remove("fa-eye");
+            eye.classList.add("fa-eye-slash");
+        }
+        else{
+            pass.setAttribute("type","password");
+            eye.classList.add("fa-eye");
+            eye.classList.remove("fa-eye-slash");
+        }
+    }
+
+    login.addEventListener("click",function(e){
+        e.preventDefault();
+        let lemail = localStorage.getItem("Email");
+        let lpass = localStorage.getItem("Password");
+
+        if(email.value !== lpass || pass.value !== lemail){
+            window.location = "bokshiverse.html";
+        }
+    })
+</script>
+</html>
